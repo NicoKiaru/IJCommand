@@ -11,8 +11,8 @@ package eu.kiaru.ijcommand;
 import net.imagej.ImageJ;
 import net.imglib2.type.numeric.RealType;
 import sc.iview.SciView;
-//import sc.iview.vector.ClearGLVector3;
-//import sc.iview.vector.Vector3;
+import sc.iview.vector.ClearGLVector3;
+import sc.iview.vector.Vector3;
 
 import org.scijava.command.Command;
 import org.scijava.plugin.Parameter;
@@ -36,7 +36,7 @@ public class DummyCommand<T extends RealType<T>> implements Command {
     public void run() {
     	// ImageJ command here
     	
-      /*  int numPoints = 25;
+        int numPoints = 25;
         Vector3[] points = new Vector3[numPoints];
 
         for( int k = 0; k < numPoints; k++ ) {
@@ -47,7 +47,7 @@ public class DummyCommand<T extends RealType<T>> implements Command {
 
         double edgeWidth = 0.1;
 
-        sciView.addLine( points, Colors.LIGHTSALMON, edgeWidth );*/
+        sciView.addLine( points, Colors.LIGHTSALMON, edgeWidth );
     }
 
     /**
