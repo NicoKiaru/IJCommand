@@ -10,8 +10,14 @@ package eu.kiaru.ijcommand;
 
 import net.imagej.ImageJ;
 import net.imglib2.type.numeric.RealType;
+import sc.iview.SciView;
+//import sc.iview.vector.ClearGLVector3;
+//import sc.iview.vector.Vector3;
+
 import org.scijava.command.Command;
+import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
+import org.scijava.util.Colors;
 
 /**
  * This example illustrates how to create an ImageJ {@link Command} plugin.
@@ -23,9 +29,25 @@ import org.scijava.plugin.Plugin;
 @Plugin(type = Command.class, menuPath = "Plugins>Gauss Filtering")
 public class DummyCommand<T extends RealType<T>> implements Command {
 
+    @Parameter
+    private SciView sciView;
+	
     @Override
     public void run() {
     	// ImageJ command here
+    	
+      /*  int numPoints = 25;
+        Vector3[] points = new Vector3[numPoints];
+
+        for( int k = 0; k < numPoints; k++ ) {
+            points[k] = new ClearGLVector3( ( float ) ( 10.0f * Math.random() - 5.0f ), //
+                                            ( float ) ( 10.0f * Math.random() - 5.0f ), //
+                                            ( float ) ( 10.0f * Math.random() - 5.0f ) );
+        }
+
+        double edgeWidth = 0.1;
+
+        sciView.addLine( points, Colors.LIGHTSALMON, edgeWidth );*/
     }
 
     /**
