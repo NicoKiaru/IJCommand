@@ -78,6 +78,7 @@
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
 		<allowedDuplicateClasses>junit.*</allowedDuplicateClasses>
+		<sciview.version>0.1.0</sciview.version>
 	</properties>
 
 	<repositories>
@@ -96,7 +97,7 @@
 		<dependency>
   			<groupId>sc.iview</groupId>
   			<artifactId>sciview</artifactId>
-  			<version>0.1.0</version>
+  			<version>${sciview.version}</version>
 		</dependency>
 		
 		
